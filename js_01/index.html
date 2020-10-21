@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* How it looks like inside the DOM */
+        body {color: rgb(255, 123, 0)}
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <!-- This is header -->
+        <button onclick="startClock()">Start Clock</button>
+        <button onclick="stopClock()">Stop Clock</button>
+        <span id="clock"></span>
+        
+    </header>
+
+    <hr>
+    <hr>
+
+    <h1>Hello World:)</h1>
+    <div class="hidden">
+            Web Technologies!!!
+            <ul>
+                <li id='first' class="item first-item bold">One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>And Four</li>
+            </ul>
+    </div>
+    
+    Hobbies
+    <ul>
+        <li class="first item">Sports</li>
+        <li class="item">Painting</li>
+    </ul>
+
+    <hr>
+    <hr>
+
+    <div id="container">
+        <header>
+            <h1>TODO List</h1>
+        </header>
+        <main>
+            <div>
+                <input type="text" placeholder="Enter the item">
+                <button onclick="addItem()">Click to add item</button>
+            </div>
+            <ol id="todo-list"></ol>
+        </main>
+    </div>
+    <footer class="footer">
+        <!-- This is footer -->
+    </footer>
+    <div class="footer">
+        <!-- Some additional info -->
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

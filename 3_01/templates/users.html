@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon/site-favicon.png') }}">
+    <title>Document</title>
+</head>
+<body>
+
+    {% set page_name = 'Homepage!' %}
+    {% include 'header.html' %}
+    {% from 'header.html' import header_message %}
+
+    The message: {{ header_message }}
+
+    <div>
+<!--        {% set user = {'firstname': "Ariel", 'lastname': "Perchik"} %}-->
+        {% if curr_user %}
+            <h1>Hello {{ curr_user.firstname }} {{ curr_user.lastname | upper }}</h1>
+        {% else %}
+            <h1>Hello Stranger</h1>
+        {% endif %}
+        <span
+            class="{% if curr_user.gender == 'f' %} female {% else %} male {% endif %}"
+            {% if curr_user.id %}id="user{{ curr_user.id }}"{% endif %}
+        >
+            Hello user.
+        </span>
+        <ul>
+            {% for hobby in hobbies %}
+                <li>{{hobby}}</li>
+            {% endfor %}
+            {% for k, v in curr_user.items() %}
+                <li>{{k}}: {{v}}</li>
+            {% endfor %}
+        </ul>
+        {% block main_content %}
+            view all users...
+        {% endblock %}
+<!--        <p>{{user}}</p>-->
+<!--        Degree: {{ degree[1] }},-->
+<!--        Hobby: {{ hobbies[0] }}-->
+    </div>
+</body>
+</html>
+

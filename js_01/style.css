@@ -1,0 +1,18 @@
+.done {
+    background: rgb(163, 252, 163);
+
+}
+
+.colored {
+    background: rgb(208, 246, 247);
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+    /* display: block; */
+}
