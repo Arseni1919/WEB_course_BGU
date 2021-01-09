@@ -2,8 +2,6 @@ from settings import DB
 import mysql.connector
 
 
-
-
 class DBManager:
     __connection = None
     __cursor = None

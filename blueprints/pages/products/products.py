@@ -1,18 +1,18 @@
 from flask import Blueprint, render_template
 
-# about blueprint definition
-about = Blueprint('about', __name__,
+# products blueprint definition
+products = Blueprint('products', __name__,
                   static_folder='static',
-                  static_url_path='/about',
+                  static_url_path='/products',
                   template_folder='templates')
 
 
 # Routes
-@about.route('/about')
+@products.route('/products')
 def index():
     return render_template('products.html')
 
 
-@about.route('/about_me')
+@products.route('/products_me')
 def index_me():
-    return 'about me'
+    return 'products me'

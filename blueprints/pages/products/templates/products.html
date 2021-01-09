@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'products' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('products.static', filename='css/products.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+    <h1>products us</h1>
+    <p>This is an example products us page</p>
+{% endblock %}
+
+{% block page_body_footer %}
+
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('products.static', filename='js/products.js') }}"></script>
+{% endblock %}
