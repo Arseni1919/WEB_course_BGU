@@ -6,6 +6,7 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html', name='ARSENI', title="Homepage")
 
+
 # @app.route('/logout')
 @app.route('/home', methods=['GET', 'POST'])
 def hello_home():
