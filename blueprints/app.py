@@ -15,6 +15,10 @@ app.register_blueprint(homepage)
 from pages.about.about import about
 app.register_blueprint(about)
 
+## Events
+from pages.events.events import events
+app.register_blueprint(events)
+
 ## Users
 from pages.users.users import users
 app.register_blueprint(users)

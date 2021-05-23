@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for
 from utilities.db.db_manager import dbManager
+
 # homepage blueprint definition
 homepage = Blueprint('homepage', __name__,
                      static_folder='static',
@@ -10,7 +11,7 @@ homepage = Blueprint('homepage', __name__,
 # Routes
 @homepage.route('/')
 def index():
-    data = dbManager.fetch('SELECT * FROM users;')
+    data = dbManager.fetch('SELECT * FROM users;', args=[])
     print(data)
     return render_template('homepage.html', data=data)
 

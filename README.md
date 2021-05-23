@@ -2,7 +2,11 @@
 
 ## Flask
 
+[Flask Docs](https://flask.palletsprojects.com/en/2.0.x/)
+
 ## Jinja2
+
+[Jinja Docs](https://jinja.palletsprojects.com/en/3.0.x/)
 
 ## MySQL information
 
