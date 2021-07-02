@@ -10,6 +10,7 @@
 
 ## Jinja2
 
+[Jinja - Real Python](https://realpython.com/primer-on-jinja-templating/)
 [Jinja Docs](https://jinja.palletsprojects.com/en/3.0.x/)
 
 ## MySQL information
