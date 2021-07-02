@@ -4,6 +4,10 @@
 
 [Flask Docs](https://flask.palletsprojects.com/en/2.0.x/)
 
+## Flask Blueprint
+
+[Flask Blueprint](https://realpython.com/flask-blueprint/)
+
 ## Jinja2
 
 [Jinja Docs](https://jinja.palletsprojects.com/en/3.0.x/)
