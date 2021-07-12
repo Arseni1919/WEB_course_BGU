@@ -7,11 +7,11 @@
 
 ## Flask Blueprint
 
-[Flask Blueprint](https://realpython.com/flask-blueprint/)
+[Flask Blueprint | Real Python](https://realpython.com/flask-blueprint/)
 
 ## Jinja2
 
-[Jinja - Real Python](https://realpython.com/primer-on-jinja-templating/)
+[Jinja | Real Python](https://realpython.com/primer-on-jinja-templating/)
 
 [Jinja Docs](https://jinja.palletsprojects.com/en/3.0.x/)
 
